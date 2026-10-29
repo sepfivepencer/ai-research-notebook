@@ -13,7 +13,7 @@
 - [核心阅读清单](notes/reading-list.md)：从结构化记录导出的六篇文献；完整地图的引文另列在地图中。
 - [工具使用说明](tools/README.md)：检查记录一致性、导出阅读清单。
 
-博客：[Sepfive 的文章归档](https://personal-web-seven-swart.vercel.app/writing)。
+博客：[Sepfive 的文章归档](https://www.sepfivepencer.org/writing)。
 
 ## 一个可以运行的小工具
 
