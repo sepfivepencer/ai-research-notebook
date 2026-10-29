@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "research": {
+    "completed_stage": 1,
+    "next_stage": 2,
+    "next_stage_confirmed": false,
+    "selected_topic": null
+  },
+  "sources": [
+    {
+      "id": "chen2025selfdebug",
+      "title": "Revisit Self-Debugging with Self-Generated Tests for Code Generation",
+      "authors": [
+        "Xiancai Chen",
+        "Zhengwei Tao",
+        "Kechi Zhang",
+        "Changzhi Zhou",
+        "Xinyu Zhang",
+        "Wanli Gu",
+        "Yuanpeng He",
+        "Mengdi Zhang",
+        "Xunliang Cai",
+        "Haiyan Zhao",
+        "Zhi Jin"
+      ],
+      "year": 2025,
+      "venue": "ACL 2025 (Long Papers)",
+      "kind": "conference",
+      "url": "https://aclanthology.org/2025.acl-long.881/",
+      "arxiv": null,
+      "checked_at": "2026-10-29",
+      "checked_scope": "metadata_and_abstract"
+    },
+    {
+      "id": "konstantinou2026test",
+      "title": "On the risk of coding before testing: An empirical study on LLM-based test generation workflow",
+      "authors": [
+        "Michael Konstantinou",
+        "Florian Tambon",
+        "Mike Papadakis"
+      ],
+      "year": 2026,
+      "venue": "arXiv (formal venue unverified)",
+      "kind": "preprint",
+      "url": "https://arxiv.org/abs/2607.05139",
+      "arxiv": "2607.05139",
+      "checked_at": "2026-10-29",
+      "checked_scope": "metadata_and_abstract"
+    },
+    {
+      "id": "wu2025longmemeval",
+      "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "authors": [
+        "Di Wu",
+        "Hongwei Wang",
+        "Wenhao Yu",
+        "Yuwei Zhang",
+        "Kai-Wei Chang",
+        "Dong Yu"
+      ],
+      "year": 2025,
+      "venue": "ICLR 2025",
+      "kind": "conference",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/d813d324dbf0598bbdc9c8e79740ed01-Abstract-Conference.html",
+      "arxiv": "2410.10813",
+      "checked_at": "2026-10-29",
+      "checked_scope": "metadata_and_abstract"
+    },
+    {
+      "id": "setlur2025compute",
+      "title": "Scaling Test-Time Compute Without Verification or RL is Suboptimal",
+      "authors": [
+        "Amrith Setlur",
+        "Nived Rajaraman",
+        "Sergey Levine",
+        "Aviral Kumar"
+      ],
+      "year": 2025,
+      "venue": "ICML 2025",
+      "kind": "conference",
+      "url": "https://proceedings.mlr.press/v267/setlur25a.html",
+      "arxiv": "2502.12118",
+      "checked_at": "2026-10-29",
+      "checked_scope": "metadata_and_abstract"
+    },
+    {
+      "id": "saleh2026afterdelete",
+      "title": "AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents",
+      "authors": [
+        "Ehsan Saleh",
+        "Roozbeh Nahavandi",
+        "Sama Salarian",
+        "Raef Bassily",
+        "Andrew Perrault"
+      ],
+      "year": 2026,
+      "venue": "arXiv (formal venue unverified)",
+      "kind": "preprint",
+      "url": "https://arxiv.org/abs/2610.31366",
+      "arxiv": "2610.31366",
+      "checked_at": "2026-10-29",
+      "checked_scope": "metadata_and_abstract"
+    },
+    {
+      "id": "abkin2026energy",
+      "title": "Measuring the Energy Cost of Completing Tasks with Quantized Language-Model Agents",
+      "authors": [
+        "Stephen Abkin",
+        "Aldric Yang",
+        "Alex Flesher",
+        "Nitheesh Kodarapu",
+        "Deepak Panigrahy",
+        "Aakash Tyagi",
+        "David Kebo Houngninou"
+      ],
+      "year": 2026,
+      "venue": "arXiv (formal venue unverified)",
+      "kind": "preprint",
+      "url": "https://arxiv.org/abs/2610.32417",
+      "arxiv": "2610.32417",
+      "checked_at": "2026-10-29",
+      "checked_scope": "metadata_and_abstract"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "A",
+      "label": "AI 自生成测试与独立修复验证",
+      "novelty_status": "待验证"
+    },
+    {
+      "id": "B",
+      "label": "长期记忆删除与衍生状态",
+      "novelty_status": "待验证"
+    },
+    {
+      "id": "C",
+      "label": "量化与完整任务成本",
+      "novelty_status": "待验证"
+    }
+  ],
+  "claims": [
+    {
+      "id": "source-selftest-bias",
+      "text": "Chen 等的摘要分析了自生成测试偏差及其对修复反馈的影响。",
+      "status": "已验证",
+      "scope": "仅核验原文确实报告，尚未独立复现",
+      "source_ids": [
+        "chen2025selfdebug"
+      ]
+    },
+    {
+      "id": "source-memory-update",
+      "text": "LongMemEval 的评估能力包括知识更新和时序推理。",
+      "status": "已验证",
+      "scope": "仅核验正式会议摘要的研究范围",
+      "source_ids": [
+        "wu2025longmemeval"
+      ]
+    },
+    {
+      "id": "hypothesis-selftest-loop",
+      "text": "特定缺陷类型可能在多轮修复中造成自测与独立测试的分歧。",
+      "status": "待验证",
+      "scope": "候选假设，未证明新颖性与现象存在",
+      "source_ids": [
+        "chen2025selfdebug",
+        "konstantinou2026test"
+      ]
+    },
+    {
+      "id": "hypothesis-memory",
+      "text": "混合来源中的删除与保留可能存在需要进一步定义和测量的边界。",
+      "status": "待验证",
+      "scope": "候选假设，已有直接前作，缺口待核查",
+      "source_ids": [
+        "saleh2026afterdelete"
+      ]
+    },
+    {
+      "id": "hypothesis-quantization",
+      "text": "单次输出吞吐与真实完成任务的效率排名可能不同。",
+      "status": "待验证",
+      "scope": "本机与具体任务未测，宽泛现象已有前作",
+      "source_ids": [
+        "abkin2026energy"
+      ]
+    },
+    {
+      "id": "feasibility-small-tasks",
+      "text": "小模型、短上下文、确定性判分可作为资源受限研究的试验入口。",
+      "status": "有依据的推断",
+      "scope": "资源与任务设计判断，实际可行性需要试运行",
+      "source_ids": []
+    }
+  ]
+}
