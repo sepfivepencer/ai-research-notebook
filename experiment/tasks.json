@@ -1,0 +1,12 @@
+[
+  {"id":"abs", "spec":"Return the absolute value of x."},
+  {"id":"sign", "spec":"Return -1 if x is negative, 0 if x is zero, and 1 if x is positive."},
+  {"id":"clamp", "spec":"Clamp x to the inclusive interval from 0 to 10: values below 0 become 0, values above 10 become 10, otherwise return x."},
+  {"id":"even", "spec":"Return 1 if x is even, otherwise return 0."},
+  {"id":"floor_even", "spec":"Return the largest even integer less than or equal to x."},
+  {"id":"three_floor", "spec":"Return the mathematical floor of x divided by 3."},
+  {"id":"odd_double", "spec":"If x is odd return twice x; if x is even return x divided by 2 as an integer."},
+  {"id":"square_cap", "spec":"Return the smaller of x squared and 100."},
+  {"id":"distance_five", "spec":"Return the nonnegative distance from x to the nearest integer divisible by 5."},
+  {"id":"digits", "spec":"Return the number of decimal digits in the absolute value of x, counting 0 as one digit."}
+]
