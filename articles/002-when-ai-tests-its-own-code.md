@@ -39,7 +39,9 @@ Xiancai Chen 等在 [ACL 2025 的论文](https://aclanthology.org/2025.acl-long.
 
 Michael Konstantinou 等的 [2026 年预印本](https://arxiv.org/html/2607.05139)比较了只根据任务描述生成测试，与看过错误实现或保留代码生成历史后生成测试。作者报告，在其选定的任务和模型设置下，后者可能更难检出错误。【已验证：论文报告；尚未独立复现】
 
-此外，[Agent-CoEvo](https://arxiv.org/abs/2604.04580) 和 [CoSPlay](https://arxiv.org/abs/2605.23491) 已经研究代码与测试的共同演化。因此，“让代码和测试多轮迭代”本身也不能作为我们的新贡献。【已验证：两篇预印本摘要；具体差异仍需深入核对】
+此外，[Agent-CoEvo](https://arxiv.org/abs/2604.04580) 和 [CoSPlay](https://arxiv.org/abs/2605.23491) 已经研究代码与测试的共同演化。因此，“让代码和测试多轮迭代”本身也不能作为我们的新贡献。【已验证：两篇预印本的方法；具体差异仍需深入核对】
+
+更值得注意的是反方证据：CoSPlay 作者报告，在他们测试的任务与模型上，通过更多生成测试的代码往往更可能通过独立的正确性检查。这并不能保证所有场景都如此，却足以提醒我们不能预设“多轮自测一定让真实正确性变差”。【已验证：作者报告，尚未独立复现】更详细的逐篇对照与限制记录在[第三阶段前作核查](https://github.com/sepfivepencer/ai-research-notebook/blob/main/notes/phase3-prior-work.md)。
 
 这意味着，我们不能仅凭换一台 M1、换一个小模型，或者重复“AI 会写错测试”，就宣称发现了新的学术问题。【有依据的推断】
 
