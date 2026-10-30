@@ -1,0 +1,13 @@
+{
+  "tasks": 10,
+  "completed": true,
+  "with_usable_tests": 9,
+  "initial_self_pass": 1,
+  "final_self_pass": 1,
+  "initial_independent_pass": 1,
+  "final_independent_pass": 1,
+  "initial_false_pass": 0,
+  "final_false_pass": 0,
+  "tasks_with_bad_test_oracles": 4,
+  "repairs": 16
+}

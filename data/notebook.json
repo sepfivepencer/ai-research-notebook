@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "research": {
-    "completed_stage": 2,
-    "next_stage": 3,
+    "completed_stage": 5,
+    "next_stage": 6,
     "next_stage_confirmed": true,
     "selected_topic": "A"
   },
