@@ -30,4 +30,4 @@ python3 tools/check_notebook.py reading-list > reading-list.md
 
 程序不联网，也不判断内容真实性。可解析的 URL 可能已失效，元数据也可能被填错；“已验证”只是填写的状态，必须靠人工与证据支持。请把工具理解为填表与引用关系检查器。
 
-`checked_scope` 记录本次人工核验范围。本仓库初始条目均为 `metadata_and_abstract`，不表示全文精读或复现。
+`checked_scope` 记录本次人工核验范围。各条目的范围可能不同；`metadata_and_abstract` 仅表示核验了题录与摘要，其他范围说明所读部分。所有条目都不表示独立复现。

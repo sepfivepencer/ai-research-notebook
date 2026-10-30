@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "research": {
-    "completed_stage": 1,
-    "next_stage": 2,
-    "next_stage_confirmed": false,
-    "selected_topic": null
+    "completed_stage": 2,
+    "next_stage": 3,
+    "next_stage_confirmed": true,
+    "selected_topic": "A"
   },
   "sources": [
     {
@@ -27,9 +27,9 @@
       "venue": "ACL 2025 (Long Papers)",
       "kind": "conference",
       "url": "https://aclanthology.org/2025.acl-long.881/",
-      "arxiv": null,
-      "checked_at": "2026-10-29",
-      "checked_scope": "metadata_and_abstract"
+      "arxiv": "2501.12793",
+      "checked_at": "2026-10-30",
+      "checked_scope": "metadata_abstract_methods_results_limitations"
     },
     {
       "id": "konstantinou2026test",
@@ -44,8 +44,8 @@
       "kind": "preprint",
       "url": "https://arxiv.org/abs/2607.05139",
       "arxiv": "2607.05139",
-      "checked_at": "2026-10-29",
-      "checked_scope": "metadata_and_abstract"
+      "checked_at": "2026-10-30",
+      "checked_scope": "metadata_abstract_methods_results_limitations"
     },
     {
       "id": "wu2025longmemeval",
@@ -98,8 +98,8 @@
       "kind": "preprint",
       "url": "https://arxiv.org/abs/2610.31366",
       "arxiv": "2610.31366",
-      "checked_at": "2026-10-29",
-      "checked_scope": "metadata_and_abstract"
+      "checked_at": "2026-10-30",
+      "checked_scope": "metadata_abstract_methods_results_limitations"
     },
     {
       "id": "abkin2026energy",
@@ -118,8 +118,188 @@
       "kind": "preprint",
       "url": "https://arxiv.org/abs/2610.32417",
       "arxiv": "2610.32417",
-      "checked_at": "2026-10-29",
+      "checked_at": "2026-10-30",
+      "checked_scope": "metadata_abstract_methods_results_limitations"
+    },
+    {
+      "id": "jung2026meme",
+      "title": "MEME: Multi-entity & Evolving Memory Evaluation",
+      "authors": [
+        "Seokwon Jung",
+        "Alexander Rubinstein",
+        "Arnas Uselis",
+        "Sangdoo Yun",
+        "Seong Joon Oh"
+      ],
+      "year": 2026,
+      "venue": "arXiv (formal venue unverified)",
+      "kind": "preprint",
+      "url": "https://arxiv.org/abs/2605.12477",
+      "arxiv": "2605.12477",
+      "checked_at": "2026-10-30",
+      "checked_scope": "metadata_abstract_methods_results_limitations"
+    },
+    {
+      "id": "yao2026forgetting",
+      "title": "Forgetting Without Restarting: Execution-State Unlearning for Stateful LLM Agents",
+      "authors": [
+        "Chao Yao",
+        "Yangbo Wei",
+        "Zhen Huang",
+        "Junhong Qian",
+        "Chenle Chen",
+        "Shaoqiang Lu",
+        "Chen Wu",
+        "Lei He"
+      ],
+      "year": 2026,
+      "venue": "arXiv (formal venue unverified)",
+      "kind": "preprint",
+      "url": "https://arxiv.org/abs/2609.04875",
+      "arxiv": "2609.04875",
+      "checked_at": "2026-10-30",
+      "checked_scope": "metadata_abstract_methods_results_limitations"
+    },
+    {
+      "id": "raeesi2026auditing",
+      "title": "Auditing Forgetting in Limited Memory Language Models",
+      "authors": [
+        "Arya Raeesi",
+        "Hanna Roed"
+      ],
+      "year": 2026,
+      "venue": "arXiv (formal venue unverified)",
+      "kind": "preprint",
+      "url": "https://arxiv.org/abs/2607.00605",
+      "arxiv": "2607.00605",
+      "checked_at": "2026-10-30",
+      "checked_scope": "metadata_abstract_methods_results_limitations"
+    },
+    {
+      "id": "wang2026agentic",
+      "title": "Agentic Unlearning: When LLM Agent Meets Machine Unlearning",
+      "authors": [
+        "Bin Wang",
+        "Fan Wang",
+        "Pingping Wang",
+        "Jinyu Cong",
+        "Yang Yu",
+        "Yilong Yin",
+        "Zhongyi Han",
+        "Benzheng Wei"
+      ],
+      "year": 2026,
+      "venue": "arXiv (formal venue unverified)",
+      "kind": "preprint",
+      "url": "https://arxiv.org/abs/2602.17692",
+      "arxiv": "2602.17692",
+      "checked_at": "2026-10-30",
+      "checked_scope": "metadata_abstract_methods_results"
+    },
+    {
+      "id": "yemets2026apple",
+      "title": "Evaluating the Applicability of LLM Inference Optimizations on Apple Silicon",
+      "authors": [
+        "Kyrylo Yemets",
+        "Andrii Yaroshevych",
+        "Victor Muryn",
+        "Ostap Khomenko",
+        "Pavlo Kryven",
+        "Maksym Kmet",
+        "Maksym Shamrai",
+        "Mariya Hirna"
+      ],
+      "year": 2026,
+      "venue": "arXiv (formal venue unverified)",
+      "kind": "preprint",
+      "url": "https://arxiv.org/abs/2610.31479",
+      "arxiv": "2610.31479",
+      "checked_at": "2026-10-30",
+      "checked_scope": "metadata_abstract_methods_results_limitations"
+    },
+    {
+      "id": "li2026agentevo",
+      "title": "Beyond Fixed Tests: Repository-Level Issue Resolution as Coevolution of Code and Behavioral Constraints",
+      "authors": [
+        "Kefan Li",
+        "Yuan Yuan",
+        "Mengfei Wang",
+        "Shihao Zheng",
+        "Wei Wang",
+        "Ping Yang",
+        "Mu Li",
+        "Weifeng Lv"
+      ],
+      "year": 2026,
+      "venue": "arXiv (formal venue unverified)",
+      "kind": "preprint",
+      "url": "https://arxiv.org/abs/2604.04580",
+      "arxiv": "2604.04580",
+      "checked_at": "2026-10-30",
       "checked_scope": "metadata_and_abstract"
+    },
+    {
+      "id": "hu2026cosplay",
+      "title": "CoSPlay: Cooperative Self-Play at Test-Time with Self-Generated Code and Unit Test",
+      "authors": [
+        "Zhangyi Hu",
+        "Chenhui Liu",
+        "Tian Huang",
+        "Jindong Li",
+        "Yang Yang",
+        "Jiemin Wu",
+        "Zining Zhong",
+        "Menglin Yang",
+        "Yutao Yue"
+      ],
+      "year": 2026,
+      "venue": "arXiv (formal venue unverified)",
+      "kind": "preprint",
+      "url": "https://arxiv.org/abs/2605.23491",
+      "arxiv": "2605.23491",
+      "checked_at": "2026-10-30",
+      "checked_scope": "metadata_and_abstract"
+    },
+    {
+      "id": "bansal2026vibepass",
+      "title": "VIBEPASS: Can Vibe Coders Really Pass the Vibe Check?",
+      "authors": [
+        "Srijan Bansal",
+        "Jiao Fangkai",
+        "Yilun Zhou",
+        "Austin Xu",
+        "Shafiq Joty",
+        "Semih Yavuz"
+      ],
+      "year": 2026,
+      "venue": "arXiv (formal venue unverified)",
+      "kind": "preprint",
+      "url": "https://arxiv.org/abs/2603.15921",
+      "arxiv": "2603.15921",
+      "checked_at": "2026-10-30",
+      "checked_scope": "metadata_and_abstract"
+    },
+    {
+      "id": "sun2026swemutation",
+      "title": "SWE-Mutation: Can LLMs Generate Reliable Test Suites in Software Engineering?",
+      "authors": [
+        "Yuxuan Sun",
+        "Yuze Zhao",
+        "Yufeng Wang",
+        "Yao Du",
+        "Zhiyuan Ma",
+        "Jinbo Wang",
+        "Mengdi Zhang",
+        "Kai Zhang",
+        "Zhenya Huang"
+      ],
+      "year": 2026,
+      "venue": "Findings of ACL 2026",
+      "kind": "conference",
+      "url": "https://aclanthology.org/2026.findings-acl.1976/",
+      "arxiv": "2605.22175",
+      "checked_at": "2026-10-30",
+      "checked_scope": "metadata_abstract_and_methods"
     }
   ],
   "candidates": [
