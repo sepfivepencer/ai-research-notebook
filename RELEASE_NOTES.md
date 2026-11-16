@@ -26,4 +26,4 @@ python3 tools/check_notebook.py check
 python3 -m unittest discover -s tests -v
 ```
 
-本机 23 项自动测试通过。CI 配置覆盖 Python 3.9 / 3.10 / 3.12；远端状态以该版本对应的 Actions 结果为准。复核不调用模型、无需网络或第三方库；这些检查不等于人类同行评审。
+本机 23 项自动测试通过。CI 固定 Ubuntu 24.04，覆盖 Python 3.9 / 3.10 / 3.12；远端状态以该版本对应的 Actions 结果为准。复核不调用模型、无需网络或第三方库；这些检查不等于人类同行评审。
