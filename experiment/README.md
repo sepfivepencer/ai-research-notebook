@@ -2,9 +2,19 @@
 
 这是小规模、探索性的研究练习，不是顶会论文的充分证据。两次方案分开保存：第一轮 `protocol.md` / `runner.py`，后续探索 `protocol-v2.md` / `runner_v2.py`。查看相应 `runs/*-summary.json` 与原始 `runs/*.json`；原始记录包含任务、提示、模型回答、修复反馈、每轮自测与独立检查，方便审计失败而非只展示成功。
 
-## 复核已保存结果
+## 推荐：只读离线复核
 
-需要 Python 3.10 及以上，无第三方包。复算会修改指定原始 JSON 的分析字段及对应汇总，建议先复制原始文件后执行：
+```bash
+python3 tools/audit_experiment.py
+```
+
+无需模型、网络或第三方包，不会改动原始记录。检查 SHA-256、任务及生成衔接、固定测试、停止规则、逐轮失败输入与汇总，并用不同写法核对参考。机器报告见 [audit/verification.json](audit/verification.json)，解释见[最终报告](../paper/研究报告.md)。校验清单用于检测意外变化，不是第三方签名。
+
+2026-11-16 修正了执行器 and/or 的短路与操作数返回语义。历史候选没有使用 BoolOp，复算结果不变；原始源码分别保留于实验前提交 e557835 和 88a3dbb。两轮原始 JSON 均保持不变。
+
+## 传统复算（写入副本）
+
+需要 Python 3.9 及以上（原始日志记录 3.9.6），无第三方包。复算会修改指定原始 JSON 的分析字段及对应汇总，建议先复制原始文件后执行：
 
 ```bash
 cp experiment/runs/pilot.json /tmp/pilot-recheck.json

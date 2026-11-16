@@ -1,0 +1,236 @@
+{
+  "evidence_date": "2026-10-30",
+  "audit_date": "2026-11-16",
+  "audit_python": "3.9.6",
+  "scope": "Offline recomputation and alternate reference implementation; no model regeneration or human peer review.",
+  "original_research_goal_achieved": false,
+  "runs": [
+    {
+      "file": "pilot.json",
+      "recorded_python": "3.9.6",
+      "model": "qwen2.5-coder:0.5b",
+      "summary": {
+        "tasks": 10,
+        "completed": true,
+        "with_usable_tests": 9,
+        "initial_self_pass": 1,
+        "final_self_pass": 1,
+        "initial_independent_pass": 1,
+        "final_independent_pass": 1,
+        "initial_false_pass": 0,
+        "final_false_pass": 0,
+        "tasks_with_bad_test_oracles": 4,
+        "repairs": 16
+      },
+      "final_categories": {
+        "correct": 1,
+        "output_type_reject": 1,
+        "semantic_wrong": 2,
+        "syntax_reject": 3,
+        "unsupported_or_runtime_error": 3
+      },
+      "calls": 36,
+      "api_errors": 0,
+      "length_limited_calls": 1,
+      "bad_json_calls": 1,
+      "historical_boolop_candidates": 0,
+      "accepted_test_assertions": 26,
+      "wrong_test_assertions": 9,
+      "tasks": [
+        {
+          "task": "abs",
+          "final_category": "correct",
+          "self_tests": 3,
+          "wrong_test_expectations": 0,
+          "initial_independent_failures": 0,
+          "final_independent_failures": 0
+        },
+        {
+          "task": "sign",
+          "final_category": "semantic_wrong",
+          "self_tests": 3,
+          "wrong_test_expectations": 0,
+          "initial_independent_failures": 21,
+          "final_independent_failures": 21
+        },
+        {
+          "task": "clamp",
+          "final_category": "syntax_reject",
+          "self_tests": 2,
+          "wrong_test_expectations": 0,
+          "initial_independent_failures": 41,
+          "final_independent_failures": 41
+        },
+        {
+          "task": "even",
+          "final_category": "output_type_reject",
+          "self_tests": 3,
+          "wrong_test_expectations": 2,
+          "initial_independent_failures": 41,
+          "final_independent_failures": 41
+        },
+        {
+          "task": "floor_even",
+          "final_category": "syntax_reject",
+          "self_tests": 4,
+          "wrong_test_expectations": 4,
+          "initial_independent_failures": 41,
+          "final_independent_failures": 41
+        },
+        {
+          "task": "three_floor",
+          "final_category": "unsupported_or_runtime_error",
+          "self_tests": 3,
+          "wrong_test_expectations": 0,
+          "initial_independent_failures": 41,
+          "final_independent_failures": 41
+        },
+        {
+          "task": "odd_double",
+          "final_category": "syntax_reject",
+          "self_tests": 3,
+          "wrong_test_expectations": 2,
+          "initial_independent_failures": 41,
+          "final_independent_failures": 41
+        },
+        {
+          "task": "square_cap",
+          "final_category": "unsupported_or_runtime_error",
+          "self_tests": 4,
+          "wrong_test_expectations": 1,
+          "initial_independent_failures": 41,
+          "final_independent_failures": 41
+        },
+        {
+          "task": "distance_five",
+          "final_category": "semantic_wrong",
+          "self_tests": 0,
+          "wrong_test_expectations": 0,
+          "initial_independent_failures": 16,
+          "final_independent_failures": 16
+        },
+        {
+          "task": "digits",
+          "final_category": "unsupported_or_runtime_error",
+          "self_tests": 1,
+          "wrong_test_expectations": 0,
+          "initial_independent_failures": 41,
+          "final_independent_failures": 41
+        }
+      ]
+    },
+    {
+      "file": "pilot-v2.json",
+      "recorded_python": "3.9.6",
+      "model": "qwen2.5-coder:1.5b",
+      "summary": {
+        "tasks": 10,
+        "completed": true,
+        "with_usable_tests": 9,
+        "initial_self_pass": 3,
+        "final_self_pass": 3,
+        "initial_independent_pass": 4,
+        "final_independent_pass": 3,
+        "initial_false_pass": 0,
+        "final_false_pass": 0,
+        "tasks_with_bad_test_oracles": 3,
+        "repairs": 12
+      },
+      "final_categories": {
+        "correct": 3,
+        "output_type_reject": 1,
+        "semantic_wrong": 5,
+        "unsupported_or_runtime_error": 1
+      },
+      "calls": 32,
+      "api_errors": 0,
+      "length_limited_calls": 1,
+      "bad_json_calls": 1,
+      "historical_boolop_candidates": 0,
+      "accepted_test_assertions": 41,
+      "wrong_test_assertions": 6,
+      "tasks": [
+        {
+          "task": "abs",
+          "final_category": "correct",
+          "self_tests": 5,
+          "wrong_test_expectations": 0,
+          "initial_independent_failures": 0,
+          "final_independent_failures": 0
+        },
+        {
+          "task": "sign",
+          "final_category": "correct",
+          "self_tests": 5,
+          "wrong_test_expectations": 0,
+          "initial_independent_failures": 0,
+          "final_independent_failures": 0
+        },
+        {
+          "task": "clamp",
+          "final_category": "correct",
+          "self_tests": 4,
+          "wrong_test_expectations": 0,
+          "initial_independent_failures": 0,
+          "final_independent_failures": 0
+        },
+        {
+          "task": "even",
+          "final_category": "output_type_reject",
+          "self_tests": 6,
+          "wrong_test_expectations": 2,
+          "initial_independent_failures": 41,
+          "final_independent_failures": 41
+        },
+        {
+          "task": "floor_even",
+          "final_category": "semantic_wrong",
+          "self_tests": 5,
+          "wrong_test_expectations": 0,
+          "initial_independent_failures": 30,
+          "final_independent_failures": 30
+        },
+        {
+          "task": "three_floor",
+          "final_category": "semantic_wrong",
+          "self_tests": 6,
+          "wrong_test_expectations": 2,
+          "initial_independent_failures": 20,
+          "final_independent_failures": 20
+        },
+        {
+          "task": "odd_double",
+          "final_category": "semantic_wrong",
+          "self_tests": 4,
+          "wrong_test_expectations": 0,
+          "initial_independent_failures": 20,
+          "final_independent_failures": 40
+        },
+        {
+          "task": "square_cap",
+          "final_category": "semantic_wrong",
+          "self_tests": 5,
+          "wrong_test_expectations": 2,
+          "initial_independent_failures": 0,
+          "final_independent_failures": 20
+        },
+        {
+          "task": "distance_five",
+          "final_category": "semantic_wrong",
+          "self_tests": 0,
+          "wrong_test_expectations": 0,
+          "initial_independent_failures": 16,
+          "final_independent_failures": 16
+        },
+        {
+          "task": "digits",
+          "final_category": "unsupported_or_runtime_error",
+          "self_tests": 1,
+          "wrong_test_expectations": 0,
+          "initial_independent_failures": 41,
+          "final_independent_failures": 41
+        }
+      ]
+    }
+  ]
+}

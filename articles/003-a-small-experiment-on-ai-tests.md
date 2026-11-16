@@ -30,6 +30,12 @@ featured: false
 
 这些都是本次样本数量，不是所有任务的错误概率。独立参考是我们手写的，经过边界检查，但没有经过独立同行复核。【已验证：本机记录；有依据的推断】
 
+## 2026-11-16 收尾复核
+
+对保存数据的离线复核确认，两轮分别调用模型 36、32 次；各有一次测试生成达到 256 token 上限而截断，没有 API 错误。两轮最终分别有 7 道和 2 道题因语法、白名单或结果类型规则被拒绝，不能将它们全部当成数学逻辑错误。【已验证：保存记录与复算】
+
+收尾还纠正了原稿的 Python 版本：两份运行日志均记录 3.9.6。执行器的 `and/or` 语义也已修复；历史候选没有使用它们，所以原有汇总保持不变。完整说明、可下载 PDF、数据校验和一条命令复核的入口都在 [GitHub 结项页](https://github.com/sepfivepencer/ai-research-notebook/blob/main/PROJECT_CLOSEOUT.md)。项目作为研究学习记录已结项，原创投稿目标没有达成。
+
 ## 一个值得看一眼的案例
 
 有一道题要求返回 `min(x², 100)`，也就是平方结果最多取 100。
@@ -46,7 +52,7 @@ featured: false
 
 目前不能把它当作一篇有充分证据的顶会论文。更重要的是，[一篇 2026 年的相关研究](https://arxiv.org/abs/2610.15797)已经讨论了测试通过却没有满足语义要求的现象；我们不能把相似观察说成首次发现。另有 [CoSPlay](https://arxiv.org/abs/2605.23491) 的作者报告，在他们的设置中，自测通过数和正确性呈正相关，提醒我们认真对待反方证据。【已验证：论文作者报告，尚未复现】
 
-不过，这次练习留下了可以检查的完整过程：[中文研究初稿](https://github.com/sepfivepencer/ai-research-notebook/blob/main/paper/%E7%A0%94%E7%A9%B6%E5%88%9D%E7%A8%BF.md)、[自我审稿与修改记录](https://github.com/sepfivepencer/ai-research-notebook/blob/main/paper/%E8%87%AA%E6%88%91%E5%AE%A1%E7%A8%BF%E4%B8%8E%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95.md)、[原始实验记录和复算方法](https://github.com/sepfivepencer/ai-research-notebook/tree/main/experiment)。这篇文章由我和 AI 助手共同完成，实验由助手在本机运行并记录。
+不过，这次练习留下了可以检查的完整过程：[完整研究报告](https://github.com/sepfivepencer/ai-research-notebook/blob/main/paper/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A.md)、[自我审稿与修改记录](https://github.com/sepfivepencer/ai-research-notebook/blob/main/paper/%E8%87%AA%E6%88%91%E5%AE%A1%E7%A8%BF%E4%B8%8E%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95.md)、[原始实验记录和复算方法](https://github.com/sepfivepencer/ai-research-notebook/tree/main/experiment)。这篇文章由我和 AI 助手共同完成，实验由助手在本机运行并记录。
 
 ## 参考文献
 

@@ -1,10 +1,13 @@
 {
   "schema_version": 1,
   "research": {
-    "completed_stage": 5,
-    "next_stage": 6,
-    "next_stage_confirmed": true,
-    "selected_topic": "A"
+    "completed_stage": 6,
+    "next_stage": null,
+    "next_stage_confirmed": false,
+    "selected_topic": "A",
+    "project_status": "closed_exploratory_report",
+    "original_research_goal_achieved": false,
+    "closed_at": "2026-11-16"
   },
   "sources": [
     {
@@ -116,8 +119,8 @@
       "year": 2026,
       "venue": "arXiv (formal venue unverified)",
       "kind": "preprint",
-      "url": "https://arxiv.org/abs/2610.32417",
-      "arxiv": "2610.32417",
+      "url": "https://arxiv.org/abs/2610.32417v2",
+      "arxiv": "2610.32417v2",
       "checked_at": "2026-10-30",
       "checked_scope": "metadata_abstract_methods_results_limitations"
     },
@@ -134,8 +137,8 @@
       "year": 2026,
       "venue": "arXiv (formal venue unverified)",
       "kind": "preprint",
-      "url": "https://arxiv.org/abs/2605.12477",
-      "arxiv": "2605.12477",
+      "url": "https://arxiv.org/abs/2605.12477v1",
+      "arxiv": "2605.12477v1",
       "checked_at": "2026-10-30",
       "checked_scope": "metadata_abstract_methods_results_limitations"
     },
@@ -300,6 +303,23 @@
       "arxiv": "2605.22175",
       "checked_at": "2026-10-30",
       "checked_scope": "metadata_abstract_and_methods"
+    },
+    {
+      "id": "liu2026lockin",
+      "title": "Passing Tests, Missing Semantics: Evidence of Interpretive Lock-In in Plan-Based DataFrame Code Generation",
+      "authors": [
+        "Jingjing Liu",
+        "Dishu Yang",
+        "Hongbo Qin",
+        "Hansong Zhang"
+      ],
+      "year": 2026,
+      "venue": "arXiv; authors report ICECER 2026 acceptance, proceedings unverified",
+      "kind": "preprint",
+      "url": "https://arxiv.org/abs/2610.15797v2",
+      "arxiv": "2610.15797v2",
+      "checked_at": "2026-11-16",
+      "checked_scope": "metadata_and_abstract"
     }
   ],
   "candidates": [

@@ -31,3 +31,10 @@ python3 tools/check_notebook.py reading-list > reading-list.md
 程序不联网，也不判断内容真实性。可解析的 URL 可能已失效，元数据也可能被填错；“已验证”只是填写的状态，必须靠人工与证据支持。请把工具理解为填表与引用关系检查器。
 
 `checked_scope` 记录本次人工核验范围。各条目的范围可能不同；`metadata_and_abstract` 仅表示核验了题录与摘要，其他范围说明所读部分。所有条目都不表示独立复现。
+
+
+## 结项离线审计
+
+`python3 tools/audit_experiment.py` 检查保存的真实实验记录，不调用 Ollama、不访问网络、不修改原始数据。`--report experiment/audit/verification.json` 可更新派生报告；参数会拒绝原始证据路径，并使用原子替换保护已有数据。
+
+`python3 tools/build_report_pdf.py` 从 `paper/研究报告.md` 重新生成报告 PDF。仅此可选命令需要第三方 `reportlab` 和包含中文的 TrueType 字体；可用 `REPORT_CHINESE_FONT` 指定字体路径。离线审计和 CI 不需要这两项依赖。PDF 使用嵌入字体子集，方便下载阅读。

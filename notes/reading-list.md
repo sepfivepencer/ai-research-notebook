@@ -39,17 +39,17 @@ Ehsan Saleh、Roozbeh Nahavandi、Sama Salarian、Raef Bassily、Andrew Perrault
 
 ## abkin2026energy · Measuring the Energy Cost of Completing Tasks with Quantized Language-Model Agents
 
-Stephen Abkin、Aldric Yang、Alex Flesher、Nitheesh Kodarapu、Deepak Panigrahy、Aakash Tyagi、David Kebo Houngninou，2026，arXiv (formal venue unverified)（preprint）。arXiv:2610.32417。
+Stephen Abkin、Aldric Yang、Alex Flesher、Nitheesh Kodarapu、Deepak Panigrahy、Aakash Tyagi、David Kebo Houngninou，2026，arXiv (formal venue unverified)（preprint）。arXiv:2610.32417v2。
 核验：2026-10-30，范围：metadata_abstract_methods_results_limitations。
 
-[一手来源](https://arxiv.org/abs/2610.32417)
+[一手来源](https://arxiv.org/abs/2610.32417v2)
 
 ## jung2026meme · MEME: Multi-entity & Evolving Memory Evaluation
 
-Seokwon Jung、Alexander Rubinstein、Arnas Uselis、Sangdoo Yun、Seong Joon Oh，2026，arXiv (formal venue unverified)（preprint）。arXiv:2605.12477。
+Seokwon Jung、Alexander Rubinstein、Arnas Uselis、Sangdoo Yun、Seong Joon Oh，2026，arXiv (formal venue unverified)（preprint）。arXiv:2605.12477v1。
 核验：2026-10-30，范围：metadata_abstract_methods_results_limitations。
 
-[一手来源](https://arxiv.org/abs/2605.12477)
+[一手来源](https://arxiv.org/abs/2605.12477v1)
 
 ## yao2026forgetting · Forgetting Without Restarting: Execution-State Unlearning for Stateful LLM Agents
 
@@ -106,3 +106,10 @@ Yuxuan Sun、Yuze Zhao、Yufeng Wang、Yao Du、Zhiyuan Ma、Jinbo Wang、Mengdi
 核验：2026-10-30，范围：metadata_abstract_and_methods。
 
 [一手来源](https://aclanthology.org/2026.findings-acl.1976/)
+
+## liu2026lockin · Passing Tests, Missing Semantics: Evidence of Interpretive Lock-In in Plan-Based DataFrame Code Generation
+
+Jingjing Liu、Dishu Yang、Hongbo Qin、Hansong Zhang，2026，arXiv; authors report ICECER 2026 acceptance, proceedings unverified（preprint）。arXiv:2610.15797v2。
+核验：2026-11-16，范围：metadata_and_abstract。
+
+[一手来源](https://arxiv.org/abs/2610.15797v2)

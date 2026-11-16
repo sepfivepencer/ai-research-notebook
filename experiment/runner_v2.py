@@ -28,7 +28,11 @@ def evaluate(expr, x):
         elif isinstance(n, ast.Compare) and len(n.ops)==1 and type(n.ops[0]) in CMPS:
             out=CMPS[type(n.ops[0])](visit(n.left,depth+1),visit(n.comparators[0],depth+1))
         elif isinstance(n, ast.BoolOp) and isinstance(n.op,(ast.And,ast.Or)):
-            vals=[visit(v,depth+1) for v in n.values]; out=all(vals) if isinstance(n.op,ast.And) else any(vals)
+            out=visit(n.values[0],depth+1)
+            for operand in n.values[1:]:
+                if isinstance(n.op, ast.And) and not out: break
+                if isinstance(n.op, ast.Or) and out: break
+                out=visit(operand,depth+1)
         elif isinstance(n, ast.Call) and isinstance(n.func,ast.Name) and n.func.id in FUNCS and not n.keywords and 1<=len(n.args)<=3:
             out=FUNCS[n.func.id](*(visit(v,depth+1) for v in n.args))
         else: raise ValueError('disallowed_ast_'+type(n).__name__)

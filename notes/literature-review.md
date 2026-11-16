@@ -1,5 +1,7 @@
 # 第二阶段：文献综述与三个候选问题对照
 
+> 历史快照：本文件记录第二阶段截至 2026-10-30 的阅读与选择；“未运行”等表述仅指当时状态。此后已完成两轮本机预实验与 2026-11-16 结项，当前结果见[研究报告](../paper/研究报告.md)与[结项说明](../PROJECT_CLOSEOUT.md)。
+
 核查日期：2026 年 10 月 30 日。阅读顺序：按本人选择，先读 AI 记忆删除，再比较 AI 自生成测试与量化任务成本。目标载体暂为中文技术长文；是否发展为论文，由后续证据和本人决定。
 
 本人随后确认：第二阶段完成后，选择 AI 自生成测试，优先探讨多轮修复中的假通过，并选择跳过学习包；目前已进入第三阶段的初步立论，具体对照、指标和实验尚待确认。【已验证：项目决策】
@@ -30,7 +32,7 @@
 
 ### 3. B2：MEME
 
-**文献**：Seokwon Jung、Alexander Rubinstein、Arnas Uselis、Sangdoo Yun、Seong Joon Oh，2026，*MEME: Multi-entity & Evolving Memory Evaluation*。arXiv:2605.12477，预印本；正式会议身份【待核实】。[原文](https://arxiv.org/html/2605.12477)。
+**文献**：Seokwon Jung、Alexander Rubinstein、Arnas Uselis、Sangdoo Yun、Seong Joon Oh，2026，*MEME: Multi-entity & Evolving Memory Evaluation*。arXiv:2605.12477，预印本；正式会议身份【待核实】。[原文](https://arxiv.org/html/2605.12477v1)。
 
 **作者问什么？** 记忆不只有“能不能找到旧事实”。当事实被更新、删除，且多个事实互相依赖时，系统能不能同步更新结论，或在证据不足时表示不确定？【已验证：第 1、3 节】
 
@@ -84,7 +86,7 @@
 
 ### 1. C1：按完整任务计算能耗
 
-**文献**：Stephen Abkin、Aldric Yang、Alex Flesher、Nitheesh Kodarapu、Deepak Panigrahy、Aakash Tyagi、David Kebo Houngninou，2026，*Measuring the Energy Cost of Completing Tasks with Quantized Language-Model Agents*，arXiv:2610.32417v2，预印本，正式会议【待核实】。[原文](https://arxiv.org/html/2610.32417)。
+**文献**：Stephen Abkin、Aldric Yang、Alex Flesher、Nitheesh Kodarapu、Deepak Panigrahy、Aakash Tyagi、David Kebo Houngninou，2026，*Measuring the Energy Cost of Completing Tasks with Quantized Language-Model Agents*，arXiv:2610.32417v2，预印本，正式会议【待核实】。[原文](https://arxiv.org/html/2610.32417v2)。
 
 作者在专用 NVIDIA A100 机器上，使用 llama.cpp 比较两个大模型的 4-bit 和 8-bit 文件，考察 29 个可自动验收任务。失败尝试的能耗也计入每个成功完成任务的成本；模型加载被排除。【已验证：论文第 3–4 节】
 
@@ -132,7 +134,7 @@
 ### 两篇必读
 
 - [AfterDeleteBench 原文](https://arxiv.org/html/2610.31366)：先读第 3 节的 paired worlds、memory and deletion，以及第 6 节局限。
-- [MEME 原文](https://arxiv.org/html/2605.12477)：先读第 3.1 节任务定义、第 4.1 节实验设置及第 6 节局限。
+- [MEME 原文](https://arxiv.org/html/2605.12477v1)：先读第 3.1 节任务定义、第 4.1 节实验设置及第 6 节局限。
 
 ### 三道自测题
 

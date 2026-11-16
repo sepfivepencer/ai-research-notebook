@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "如引用本学习项目，请同时说明它是探索性研究报告，未经同行评审。"
+type: software
+title: "AI 自生成测试的本地探索：报告、代码与证据"
+authors:
+  - family-names: "sepfivepencer"
+version: 1.0.0
+date-released: 2026-11-16
+repository-code: "https://github.com/sepfivepencer/ai-research-notebook"
+url: "https://www.sepfivepencer.org/writing/a-small-experiment-on-ai-tests"
+abstract: "本科研究学习项目：两轮本地预实验、完整原始记录及离线复核工具；未确立原创可投稿贡献。"
